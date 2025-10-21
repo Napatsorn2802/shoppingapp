@@ -17,8 +17,8 @@ class _OnboardingState extends State<Onboarding> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xFFFAF7F2),
-              Color(0xFFF0E6D8),
+              Color(0xFFE8F4F3),
+              Color(0xFFF5F9F8),
             ],
           ),
         ),
@@ -55,12 +55,13 @@ class _OnboardingState extends State<Onboarding> {
                       Container(
                         padding: EdgeInsets.all(12),
                         decoration: BoxDecoration(
-                          color: Color(0xFFD4A574).withOpacity(0.2),
+                          // ignore: deprecated_member_use
+                          color: Color(0xFF7FB685).withOpacity(0.15),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Icon(
-                          Icons.shopping_bag_outlined,
-                          color: Color(0xFF8B6F47),
+                          Icons.local_florist,
+                          color: Color(0xFF2D5F3F),
                           size: 28,
                         ),
                       ),
@@ -71,16 +72,16 @@ class _OnboardingState extends State<Onboarding> {
                       Text(
                         "Welcome to",
                         style: TextStyle(
-                          color: Color(0xFF8B6F47),
+                          color: Color(0xFF5A7C65),
                           fontSize: 24.0,
                           fontWeight: FontWeight.w500,
                           letterSpacing: 0.5,
                         ),
                       ),
                       Text(
-                        "Vintage Store",
+                        "Our Plant Shop",
                         style: TextStyle(
-                          color: Color(0xFF5C4033),
+                          color: Color(0xFF2D5F3F),
                           fontSize: 40.0,
                           fontWeight: FontWeight.bold,
                           height: 1.2,
@@ -91,9 +92,9 @@ class _OnboardingState extends State<Onboarding> {
                       
                       // คำบรรยาย
                       Text(
-                        "ค้นพบเสื้อผ้า รองเท้า และของตกแต่ง\nสไตล์วินเทจที่ไม่เหมือนใคร ✨",
+                        "ค้นพบต้นไม้และพืชพรรณนาๆชนิดที่แสนสวยงาม\nเพื่อตกแต่งบ้านและสวนของคุณ 🌿",
                         style: TextStyle(
-                          color: Color(0xFFA67B5B),
+                          color: Color(0xFF6B8E76),
                           fontSize: 16.0,
                           height: 1.5,
                         ),
@@ -116,14 +117,15 @@ class _OnboardingState extends State<Onboarding> {
                             decoration: BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [
-                                  Color(0xFF8B6F47),
-                                  Color(0xFFB8956A),
+                                  Color(0xFF3D7C4F),
+                                  Color(0xFF5FA573),
                                 ],
                               ),
                               borderRadius: BorderRadius.circular(30),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Color(0xFF8B6F47).withOpacity(0.4),
+                                  // ignore: deprecated_member_use
+                                  color: Color(0xFF5FA573).withOpacity(0.4),
                                   blurRadius: 12,
                                   offset: Offset(0, 6),
                                 ),
@@ -133,7 +135,7 @@ class _OnboardingState extends State<Onboarding> {
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Text(
-                                  "เริ่มต้น",
+                                  "Next",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 18,

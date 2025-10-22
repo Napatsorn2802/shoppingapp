@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:shoppingapp/pages/bottomnev.dart';
 import 'package:shoppingapp/pages/home.dart';
 import 'package:shoppingapp/pages/onboarding.dart';
+import 'package:shoppingapp/pages/product_detail.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,8 +33,9 @@ class MyApp extends StatelessWidget {
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
-      home: Home(),//กำหนดเส้นทางคลิกไปหน้าต่าง
+      home: Onboarding()//กำหนดเส้นทางคลิกไปหน้าต่าง
     );
   }
 }

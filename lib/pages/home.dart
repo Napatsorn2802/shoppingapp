@@ -1,4 +1,4 @@
-/*import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:shoppingapp/widget/support_widget.dart';
 
 class Home extends StatefulWidget{
@@ -63,7 +63,7 @@ List categories=[//ภาพหมวดหมู่
                 hintText: "Search products",
                 hintStyle:AppWidget.lightTextFeildStyle(),
                 prefixIcon: const Icon(Icons.search,
-                color:Colors.black)),
+                color:Color.fromARGB(255, 112, 80, 49))),//ไอค่อนค้นห่
               ),
             ),
             
@@ -80,7 +80,7 @@ List categories=[//ภาพหมวดหมู่
                 Text(
                   "See all",//ดูทั้งหมด
                   style: TextStyle(
-                    color: (Colors.red),
+                    color: (const Color.fromARGB(255, 112, 80, 49)),
                     fontSize: 18,
                     fontWeight: FontWeight.bold,)
                 )
@@ -94,7 +94,7 @@ List categories=[//ภาพหมวดหมู่
                   padding: EdgeInsets.all(20),
                   margin: EdgeInsets.only(right: 20),
                   decoration: BoxDecoration(
-                    color:Color(0xFFFD6F3E),
+                    color:Color.fromARGB(255, 115, 80, 47),
                     borderRadius: BorderRadius.circular(10)
                   ),           //All
                   child: Center(
@@ -133,7 +133,7 @@ List categories=[//ภาพหมวดหมู่
                 Text(
                   "See all",//ดูทั้งหมด
                   style: TextStyle(
-                    color: (Colors.red),
+                    color: (const Color.fromARGB(255, 112, 80, 49)),
                     fontSize: 18,
                     fontWeight: FontWeight.bold,)
                 )
@@ -183,7 +183,7 @@ List categories=[//ภาพหมวดหมู่
                 Text(
                   "฿20",//ราคา
                   style: TextStyle(
-                    color: Color(0xFFfd6f3e),//สี
+                    color:(const Color.fromARGB(255, 112, 80, 49)),//สี
                     fontSize: 22,//ขนาด
                     fontWeight: FontWeight.bold,//ความหนา
                   ),
@@ -192,11 +192,11 @@ List categories=[//ภาพหมวดหมู่
                     Container(
                       padding: EdgeInsets.all(6),//ขนาดปุ่ม
                       decoration: BoxDecoration(//ตกแต่งปุ่ม
-                        color: Color(0xFFfd6f3e),//สี
+                        color:(const Color.fromARGB(255, 112, 80, 49)),//สี
                         borderRadius: BorderRadius.circular(8),//ความโค้งมน
                       ),
                       child: Icon(//ไอคอนปุ่ม
-                        Icons.add,//ไอคอนบวก
+                        Icons.shopping_cart_outlined,
                         color: Colors.white,//สี
                         size: 20,//ขนาด
                       ),
@@ -244,7 +244,7 @@ List categories=[//ภาพหมวดหมู่
                 Text(
                   "฿45",//ราคา
                   style: TextStyle(
-                    color: Color(0xFFfd6f3e),//สี
+                    color:(const Color.fromARGB(255, 112, 80, 49)),//สี
                     fontSize: 22,//ขนาด
                     fontWeight: FontWeight.bold,//ความหนา
                   ),
@@ -253,11 +253,11 @@ List categories=[//ภาพหมวดหมู่
                     Container(
                       padding: EdgeInsets.all(6),//ขนาดปุ่ม
                       decoration: BoxDecoration(//ตกแต่งปุ่ม
-                        color: Color(0xFFfd6f3e),//สี
+                        color: (const Color.fromARGB(255, 112, 80, 49)),//สี
                         borderRadius: BorderRadius.circular(8),//ความโค้งมน
                       ),
                       child: Icon(//ไอคอนปุ่ม
-                        Icons.add,//ไอคอนบวก
+                        Icons.shopping_cart_outlined,
                         color: Colors.white,//สี
                         size: 20,//ขนาด
                       ),
@@ -304,7 +304,7 @@ List categories=[//ภาพหมวดหมู่
                 Text(
                   "฿35",//ราคา
                   style: TextStyle(
-                    color: Color(0xFFfd6f3e),//สี
+                    color:(const Color.fromARGB(255, 112, 80, 49)),//สี
                     fontSize: 22,//ขนาด
                     fontWeight: FontWeight.bold,//ความหนา
                   ),
@@ -313,11 +313,11 @@ List categories=[//ภาพหมวดหมู่
                     Container(
                       padding: EdgeInsets.all(6),//ขนาดปุ่ม
                       decoration: BoxDecoration(//ตกแต่งปุ่ม
-                        color: Color(0xFFfd6f3e),//สี
+                        color: (const Color.fromARGB(255, 112, 80, 49)),//สี
                         borderRadius: BorderRadius.circular(8),//ความโค้งมน
                       ),
                       child: Icon(//ไอคอนปุ่ม
-                        Icons.add,//ไอคอนบวก
+                        Icons.shopping_cart_outlined,
                         color: Colors.white,//สี
                         size: 20,//ขนาด
                       ),
@@ -364,7 +364,7 @@ List categories=[//ภาพหมวดหมู่
                 Text(
                   "฿45",//ราคา
                   style: TextStyle(
-                    color: Color(0xFFfd6f3e),//สี
+                    color: (const Color.fromARGB(255, 112, 80, 49)),//สี
                     fontSize: 22,//ขนาด
                     fontWeight: FontWeight.bold,//ความหนา
                   ),
@@ -373,13 +373,13 @@ List categories=[//ภาพหมวดหมู่
                     Container(
                       padding: EdgeInsets.all(6),//ขนาดปุ่ม
                       decoration: BoxDecoration(//ตกแต่งปุ่ม
-                        color: Color(0xFFfd6f3e),//สี
+                        color:(const Color.fromARGB(255, 112, 80, 49)),//สี
                         borderRadius: BorderRadius.circular(8),//ความโค้งมน
                       ),
-                      child: Icon(//ไอคอนปุ่ม
-                        Icons.add,//ไอคอนบวก
-                        color: Colors.white,//สี
-                        size: 20,//ขนาด
+                      child: Icon(
+                        Icons.shopping_cart_outlined,
+                        color: Colors.white,
+                        size: 20,
                       ),
                     ),
          ],
@@ -417,394 +417,9 @@ List categories=[//ภาพหมวดหมู่
           height: 50,
           width: 50, 
           fit: BoxFit.cover,),
-          Icon(Icons.arrow_forward)
+          Icon(Icons.arrow_forward,color:Color.fromARGB(255, 79, 55, 32),) //ไอค่อนชีไปทางขวา
+          
         ],),
       );
     }
-  }*/
-import 'package:flutter/material.dart';
-import 'package:shoppingapp/widget/support_widget.dart';
-
-class Home extends StatefulWidget {
-  const Home({super.key});
-
-  @override
-  State<Home> createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
-  List categories = [
-    "images/icons8-tree-50.png",
-    "images/icons8-flower-50.png",
-    "images/icons8-cactus-50.png",
-    "images/icons8-fruit-50.png"
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color(0xFFF5F9F5),
-      body: Container(
-        margin: const EdgeInsets.only(top: 50, left: 20, right: 20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // ส่วน Header และรูปภาพ
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Text(
-                          "Hey, shivam",
-                          style: AppWidget.boldTextFeildStyle(),
-                        ),
-                        SizedBox(width: 8),
-                        Icon(Icons.eco, color: Color(0xFF2E7D32), size: 20),
-                      ],
-                    ),
-                    Text(
-                      "Good morning",
-                      style: AppWidget.lightTextFeildStyle(),
-                    ),
-                  ],
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: Color(0xFF4CAF50),
-                      width: 3,
-                    ),
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(40),
-                    child: Image.asset(
-                      "images/user1.jpg",
-                      height: 75,
-                      width: 75,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-
-            // ช่องค้นหาสินค้า
-            const SizedBox(height: 30),
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(20),
-                boxShadow: [
-                  BoxShadow(
-                    // ignore: deprecated_member_use
-                    color: Color(0xFF4CAF50).withOpacity(0.1),
-                    blurRadius: 10,
-                    offset: Offset(0, 4),
-                  ),
-                ],
-              ),
-              width: MediaQuery.of(context).size.width,
-              child: TextField(
-                decoration: InputDecoration(
-                  border: InputBorder.none,
-                  hintText: "Search Products",//ค้นหา
-                  hintStyle: AppWidget.lightTextFeildStyle(),
-                  prefixIcon: const Icon(
-                    Icons.search,
-                    color: Color(0xFF4CAF50),
-                  ),
-                  contentPadding: EdgeInsets.symmetric(vertical: 15),
-                ),
-              ),
-            ),
-
-            const SizedBox(height: 25),
-
-            // หมวดหมู่
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [//หมวดหมู่
-                Text("Categories", style: AppWidget.semiboldTextFeildStyle()),
-                Text(
-                  "See all",//ดูทั้งหมด
-                  style: TextStyle(
-                    color: Color(0xFF4CAF50),
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                  ),
-                )
-              ],
-            ),
-            SizedBox(height: 20),
-            
-            Container(
-              height: 140,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  // ปุ่ม All
-                  Container(
-                    width: 100,
-                    margin: EdgeInsets.only(right: 15),
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: [Color(0xFF2E7D32), Color(0xFF4CAF50)],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                      ),
-                      borderRadius: BorderRadius.circular(15),
-                      boxShadow: [
-                        BoxShadow(
-                          // ignore: deprecated_member_use
-                          color: Color(0xFF4CAF50).withOpacity(0.3),
-                          blurRadius: 8,
-                          offset: Offset(0, 4),
-                        ),
-                      ],
-                    ),
-                    child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(Icons.apps, color: Colors.white, size: 35),
-                          SizedBox(height: 8),
-                          Text(
-                            "All",//ทั้งหมด
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  // Categories
-                  ...List.generate(
-                    categories.length,
-                    (index) => CategoryTile(image: categories[index]),
-                  ),
-                ],
-              ),
-            ),
-            
-            SizedBox(height: 30),
-
-            // สินค้าทั้งหมด
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [//สินค้าทั้งหมด
-                Text("All Products", style: AppWidget.semiboldTextFeildStyle()),
-                Text(
-                  "See all",//ดูทั้งหมด
-                  style: TextStyle(
-                    color: Color(0xFF4CAF50),
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                  ),
-                )
-              ],
-            ),
-            SizedBox(height: 20),
-
-            // รายการสินค้า
-            Expanded(
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  ProductCard(
-                    image: "images/3.jpg",
-                    name: "Tomato tree",
-                    price: "฿20",
-                  ),
-                  ProductCard(
-                    image: "images/2.jpg",
-                    name: "Petrea volubilis",
-                    price: "฿45",
-                  ),
-                  ProductCard(
-                    image: "images/4.jpg",
-                    name: "Mammillaria",
-                    price: "฿35",
-                  ),
-                  ProductCard(
-                    image: "images/1.jpg",
-                    name: "Passiflora edulis",
-                    price: "฿45",
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
   }
-}
-
-// Widget สำหรับหมวดหมู่
-class CategoryTile extends StatelessWidget {
-  final String image;
-  CategoryTile({required this.image});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 100,
-      padding: EdgeInsets.all(15),
-      margin: EdgeInsets.only(right: 15),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(15),
-        boxShadow: [
-          BoxShadow(
-            // ignore: deprecated_member_use
-            color: Colors.black.withOpacity(0.05),
-            blurRadius: 8,
-            offset: Offset(0, 2),
-          ),
-        ],
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            image,
-            height: 50,
-            width: 50,
-            fit: BoxFit.cover,
-          ),
-          SizedBox(height: 12),
-          Container(
-            padding: EdgeInsets.all(6),
-            decoration: BoxDecoration(
-              color: Color(0xFFE8F5E9),
-              shape: BoxShape.circle,
-            ),
-            child: Icon(
-              Icons.arrow_forward,
-              color: Color(0xFF2E7D32),
-              size: 18,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-// Widget สำหรับการ์ดสินค้า
-class ProductCard extends StatelessWidget {
-  final String image;
-  final String name;
-  final String price;
-
-  ProductCard({
-    required this.image,
-    required this.name,
-    required this.price,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 170,
-      margin: EdgeInsets.only(right: 15, bottom: 10),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(20),
-        boxShadow: [
-          BoxShadow(
-            // ignore: deprecated_member_use
-            color: Colors.black.withOpacity(0.08),
-            blurRadius: 12,
-            offset: Offset(0, 4),
-          ),
-        ],
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // รูปสินค้า
-          Container(
-            height: 140,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-            ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-              child: Image.asset(
-                image,
-                height: 140,
-                width: double.infinity,
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
-
-          // ข้อมูลสินค้า
-          Padding(
-            padding: EdgeInsets.all(12),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  name,
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Color(0xFF2E7D32),
-                  ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                ),
-                SizedBox(height: 8),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      price,
-                      style: TextStyle(
-                        color: Color(0xFF2E7D32),
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.all(6),
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [Color(0xFF2E7D32), Color(0xFF4CAF50)],
-                        ),
-                        borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
-                          BoxShadow(
-                            // ignore: deprecated_member_use
-                            color: Color(0xFF4CAF50).withOpacity(0.3),
-                            blurRadius: 6,
-                            offset: Offset(0, 3),
-                          ),
-                        ],
-                      ),
-                      child: Icon(
-                        Icons.add_shopping_cart,
-                        color: Colors.white,
-                        size: 18,
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}

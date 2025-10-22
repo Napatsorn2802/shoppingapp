@@ -1,3 +1,4 @@
+// Onboarding.dart - Brown Theme
 import 'package:flutter/material.dart';
 
 class Onboarding extends StatefulWidget {
@@ -17,8 +18,8 @@ class _OnboardingState extends State<Onboarding> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xFFE8F4F3),
-              Color(0xFFF5F9F8),
+              Color(0xFF8B6F47),
+              Color(0xFFD4C4B0),
             ],
           ),
         ),
@@ -56,12 +57,12 @@ class _OnboardingState extends State<Onboarding> {
                         padding: EdgeInsets.all(12),
                         decoration: BoxDecoration(
                           // ignore: deprecated_member_use
-                          color: Color(0xFF7FB685).withOpacity(0.15),
+                          color: Color(0xFF8B6F47).withOpacity(0.2),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Icon(
                           Icons.local_florist,
-                          color: Color(0xFF2D5F3F),
+                          color: Color(0xFF6B5444),
                           size: 28,
                         ),
                       ),
@@ -72,7 +73,7 @@ class _OnboardingState extends State<Onboarding> {
                       Text(
                         "Welcome to",
                         style: TextStyle(
-                          color: Color(0xFF5A7C65),
+                          color: Color(0xFF8B6F47),
                           fontSize: 24.0,
                           fontWeight: FontWeight.w500,
                           letterSpacing: 0.5,
@@ -81,7 +82,7 @@ class _OnboardingState extends State<Onboarding> {
                       Text(
                         "Our Plant Shop",
                         style: TextStyle(
-                          color: Color(0xFF2D5F3F),
+                          color: Color(0xFF6B5444),
                           fontSize: 40.0,
                           fontWeight: FontWeight.bold,
                           height: 1.2,
@@ -92,10 +93,10 @@ class _OnboardingState extends State<Onboarding> {
                       
                       // คำบรรยาย
                       Text(
-                        "ค้นพบต้นไม้และพืชพรรณนาๆชนิดที่แสนสวยงาม\nเพื่อตกแต่งบ้านและสวนของคุณ 🌿",
+                        "ค้นพบต้นไม้และพืชพรรณนาๆชนิดที่แสนสวยงามเพื่อตกแต่งบ้านและสวนของคุณ 🌿",
                         style: TextStyle(
-                          color: Color(0xFF6B8E76),
-                          fontSize: 16.0,
+                          color: Color.fromARGB(255, 120, 98, 72),
+                          fontSize: 20.0,
                           height: 1.5,
                         ),
                       ),
@@ -117,15 +118,15 @@ class _OnboardingState extends State<Onboarding> {
                             decoration: BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [
-                                  Color(0xFF3D7C4F),
-                                  Color(0xFF5FA573),
+                                  Color(0xFF6B5444),
+                                  Color(0xFF8B6F47),
                                 ],
                               ),
                               borderRadius: BorderRadius.circular(30),
                               boxShadow: [
                                 BoxShadow(
                                   // ignore: deprecated_member_use
-                                  color: Color(0xFF5FA573).withOpacity(0.4),
+                                  color: Color(0xFF8B6F47).withOpacity(0.4),
                                   blurRadius: 12,
                                   offset: Offset(0, 6),
                                 ),

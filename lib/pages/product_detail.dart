@@ -80,7 +80,6 @@ class _ProductDetailState extends State<ProductDetail>{
   }
 }*/
 import 'package:flutter/material.dart';
-import 'package:shoppingapp/widget/support_widget.dart';
 
 class ProductDetail extends StatefulWidget{
   const ProductDetail({super.key});

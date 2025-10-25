@@ -1,3 +1,7 @@
+plugins {//เพิ่มเข้ามา
+     // Add the dependency for the Google services Gradle plugin
+        id("com.google.gms.google-services") version "4.3.15" apply false//เพิ่มเข้ามา
+    }//เพิ่มเข้ามา
 allprojects {
     repositories {
         google()

@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:shoppingapp/Admin/add_product.dart';
 import 'package:shoppingapp/Admin/admin_login.dart';
 import 'package:shoppingapp/Admin/home_admin.dart';
 import 'package:shoppingapp/pages/bottomnev.dart';

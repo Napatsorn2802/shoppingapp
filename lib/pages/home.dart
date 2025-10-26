@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoppingapp/pages/category_products.dart';
 import 'package:shoppingapp/widget/support_widget.dart';
 
 class Home extends StatefulWidget{
@@ -14,6 +15,13 @@ List categories=[//ภาพหมวดหมู่
   "images/icons8-flower-50.png",
   "images/icons8-cactus-50.png",
   "images/icons8-fruit-50.png"
+];
+
+List Categoryname=[
+ "tree",
+ "flower",
+ "cantus",
+ "fruit"
 ];
 
   @override
@@ -115,7 +123,7 @@ List categories=[//ภาพหมวดหมู่
                       shrinkWrap: true,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index){
-                      return CategoryTile(image: categories[index]);  
+                      return CategoryTile(image: categories[index],name: Categoryname[index],);  
                       }
                       ) ,
                   ),
@@ -399,27 +407,33 @@ List categories=[//ภาพหมวดหมู่
 }
   // ignore: must_be_immutable
   class CategoryTile extends StatelessWidget{
-    String image;
-    CategoryTile({required this.image});
+    String image,name;
+    CategoryTile({required this.image,required this.name});
+
     @override
     Widget build (BuildContext constext){
-      return Container(
-        padding: EdgeInsets.all(20),
-        margin: EdgeInsets.only(right: 20),
-        decoration: BoxDecoration(
-          color:Colors.white,
-          borderRadius: BorderRadius.circular(10)
+      return GestureDetector(
+        onTap: (){
+          Navigator.push(constext, MaterialPageRoute(builder: (constext)=>CategoryProducts(category: name) ));
+        },
+        child: Container(
+          padding: EdgeInsets.all(20),
+          margin: EdgeInsets.only(right: 20),
+          decoration: BoxDecoration(
+            color:Colors.white,
+            borderRadius: BorderRadius.circular(10)
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+            Image.asset(image, 
+            height: 50,
+            width: 50, 
+            fit: BoxFit.cover,),
+            Icon(Icons.arrow_forward,color:Color.fromARGB(255, 79, 55, 32),) //ไอค่อนชีไปทางขวา
+            
+          ],),
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-          Image.asset(image, 
-          height: 50,
-          width: 50, 
-          fit: BoxFit.cover,),
-          Icon(Icons.arrow_forward,color:Color.fromARGB(255, 79, 55, 32),) //ไอค่อนชีไปทางขวา
-          
-        ],),
       );
     }
   }
